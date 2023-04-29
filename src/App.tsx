@@ -11,7 +11,7 @@ interface Record {
 }
 
 function App() {
-  const [row, setRow] = useState([]);
+  const [row, setRow] = useState<Record[]>([]);
 
   const createRow = () => {
     const singleData: Record = {
